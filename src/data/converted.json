@@ -1,0 +1,5230 @@
+[
+  {
+    "id": "q001",
+    "type": "single",
+    "stem": "VMware Workstation网卡的默认类型是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "NAT"
+      },
+      {
+        "key": "B",
+        "text": "桥接"
+      },
+      {
+        "key": "C",
+        "text": "仅主机"
+      },
+      {
+        "key": "D",
+        "text": "LAN区段"
+      }
+    ],
+    "answer": "A",
+    "explain": "安装后默认启用NAT，通过宿主机共享上网，相对桥接更安全。"
+  },
+  {
+    "id": "q002",
+    "type": "boolean",
+    "stem": "VMware Workstation网络连接类型设置为桥接方式后，虚拟机和主机处于同等网络地位。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "桥接把虚拟机直接接入物理网络，与主机同级获取IP。"
+  },
+  {
+    "id": "q003",
+    "type": "boolean",
+    "stem": "在VMware Workstation 16的虚拟网络编辑器中，添加自定义网络时可以使用由VMware Workstation软件内置的DHCP服务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "自定义网络可勾选“使用本地DHCP服务”自动分配IP。"
+  },
+  {
+    "id": "q004",
+    "type": "boolean",
+    "stem": "VMware Workstation 16安装完虚拟机后，在设置虚拟机的网络适配器时如果设置为LAN区段模式，可以通过LAN区段模式的高级设置使用VMware Workstation内置的DHCP服务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "LAN区段完全隔离，需手动配置DHCP或静态IP，不自动提供。"
+  },
+  {
+    "id": "q005",
+    "type": "single",
+    "stem": "在VMware Workstation 16环境中，虚拟光驱默认使用的光盘镜像文件格式为？",
+    "options": [
+      {
+        "key": "A",
+        "text": "ISO"
+      },
+      {
+        "key": "B",
+        "text": "IMG"
+      },
+      {
+        "key": "C",
+        "text": "NRG"
+      },
+      {
+        "key": "D",
+        "text": "BIN"
+      }
+    ],
+    "answer": "A",
+    "explain": "ISO是最通用标准，VMware默认关联.iso文件。"
+  },
+  {
+    "id": "q006",
+    "type": "boolean",
+    "stem": "VMware Workstation使用中VMware Tools属于可选的软件包，对系统性能没有什么提升。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Tools提供驱动与加速功能，显著提升图形、磁盘、网络性能。"
+  },
+  {
+    "id": "q007",
+    "type": "boolean",
+    "stem": "VMware Workstation虚拟机快照比克隆好用，在需要2台同系统虚拟机的场合应该使用快照方式快速搭建所需环境。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "快照不能同时运行两份，克隆才能生成独立运行的第二台机。"
+  },
+  {
+    "id": "q008",
+    "type": "boolean",
+    "stem": "VMware Workstation的快照比较占用存储空间，系统为每个虚拟机给出了仅能创建1个快照的权力。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "快照数量仅受磁盘空间限制，可建多条。"
+  },
+  {
+    "id": "q009",
+    "type": "multi",
+    "stem": "VMware Workstation环境中，需要用到两台同操作系统的虚拟机，其中一台虚拟机已经安装完成，另一台虚拟机可以使用的安装方式有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "克隆"
+      },
+      {
+        "key": "B",
+        "text": "快照"
+      },
+      {
+        "key": "C",
+        "text": "导出OVF后再导入为另一台虚拟机"
+      },
+      {
+        "key": "D",
+        "text": "关机后复制全部虚拟机文件后，使用文件打开菜单"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "快照无法直接生成独立运行的第二台，克隆/复制/导入OVF均可。"
+  },
+  {
+    "id": "q010",
+    "type": "boolean",
+    "stem": "VMware Workstation 16环境中，网络适配器连接的NAT模式其网段是固定的，无法修改。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "可在“虚拟网络编辑器”中自由修改NAT网段与掩码。"
+  },
+  {
+    "id": "q011",
+    "type": "single",
+    "stem": "需要使用VMware Workstation环境搭建一个完全独立的网络环境，默认情况下可以使用以下哪种网络连接模式？",
+    "options": [
+      {
+        "key": "A",
+        "text": "桥接模式"
+      },
+      {
+        "key": "B",
+        "text": "NAT模式"
+      },
+      {
+        "key": "C",
+        "text": "仅主机模式"
+      },
+      {
+        "key": "D",
+        "text": "LAN区段"
+      }
+    ],
+    "answer": "D",
+    "explain": "LAN区段与其他虚拟网卡物理隔离，形成独立局域网。"
+  },
+  {
+    "id": "q012",
+    "type": "boolean",
+    "stem": "使用VMware Workstation新建虚拟机时，在“选择客户机操作系统”页面，操作系统必须精确，否则后续安装系统可能会出现不能启动的故障。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "该选项仅用于推荐配置，实际系统可与选择项不同，不影响启动。"
+  },
+  {
+    "id": "q013",
+    "type": "boolean",
+    "stem": "使用VMware Workstation创建虚拟机时，硬盘容量大小要提前规划好。如果使用过程中硬盘容量不够，系统只能通过新增硬盘来解决这个问题。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "可直接扩展原虚拟磁盘容量，无需新增硬盘。"
+  },
+  {
+    "id": "q014",
+    "type": "multi",
+    "stem": "虚拟化的定义是什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "虚拟化的对象是各种各样的资源"
+      },
+      {
+        "key": "B",
+        "text": "经过虚拟化后的逻辑资源对用户隐藏了不必要的细节"
+      },
+      {
+        "key": "C",
+        "text": "用户可以在虚拟环境中实现其在真实环境中的部分或者全部功能"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "三点共同构成虚拟化的完整定义。"
+  },
+  {
+    "id": "q015",
+    "type": "multi",
+    "stem": "虚拟化常用的类型有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "服务器虚拟化"
+      },
+      {
+        "key": "B",
+        "text": "桌面虚拟化"
+      },
+      {
+        "key": "C",
+        "text": "存储虚拟化"
+      },
+      {
+        "key": "D",
+        "text": "网络虚拟化"
+      },
+      {
+        "key": "E",
+        "text": "应用虚拟化"
+      }
+    ],
+    "answer": "ABCDE",
+    "explain": "五类均为当前主流虚拟化技术方向。"
+  },
+  {
+    "id": "q016",
+    "type": "single",
+    "stem": "VMware的网络虚拟化平台是VMware？",
+    "options": [
+      {
+        "key": "A",
+        "text": "NSX"
+      },
+      {
+        "key": "B",
+        "text": "VSAN"
+      },
+      {
+        "key": "C",
+        "text": "ESXi"
+      },
+      {
+        "key": "D",
+        "text": "vSphere"
+      }
+    ],
+    "answer": "A",
+    "explain": "NSX专司网络虚拟化与微分段。"
+  },
+  {
+    "id": "q017",
+    "type": "single",
+    "stem": "VMware的存储虚拟化产品是VMware？",
+    "options": [
+      {
+        "key": "A",
+        "text": "NSX"
+      },
+      {
+        "key": "B",
+        "text": "VSAN"
+      },
+      {
+        "key": "C",
+        "text": "ESXi"
+      },
+      {
+        "key": "D",
+        "text": "vSphere"
+      }
+    ],
+    "answer": "B",
+    "explain": "VSAN把本地磁盘聚为共享存储，实现存储虚拟化。"
+  },
+  {
+    "id": "q018",
+    "type": "single",
+    "stem": "Microsoft公司的虚拟化产品是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Hyper-V"
+      },
+      {
+        "key": "B",
+        "text": "ESXi"
+      },
+      {
+        "key": "C",
+        "text": "KVM"
+      },
+      {
+        "key": "D",
+        "text": "Xen"
+      }
+    ],
+    "answer": "A",
+    "explain": "Hyper-V为Windows Server内置的裸金属虚拟化角色。"
+  },
+  {
+    "id": "q019",
+    "type": "boolean",
+    "stem": "Docker是一种小型虚拟化技术，几乎没有性能开销，可以很容易地在机器和数据中心运行。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "容器共享宿主机内核，资源占用少，部署密度高。"
+  },
+  {
+    "id": "q020",
+    "type": "boolean",
+    "stem": "Docker和虚拟机在启动速度上的比较，容器是秒级，而虚拟机是分钟级。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "容器无需引导完整OS，启动通常为秒级；虚拟机需引导内核，故为分钟级。"
+  },
+  {
+    "id": "q021",
+    "type": "boolean",
+    "stem": "Docker和虚拟机在硬盘使用上的比较，容器一般是GB，而虚拟机一般是MB。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "容器镜像层共享，通常几十到几百MB；虚拟机含完整系统，一般为数GB。"
+  },
+  {
+    "id": "q022",
+    "type": "boolean",
+    "stem": "Docker和虚拟机在性能上的比较，容器接近原生，而虚拟机弱于原生。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "容器直接利用宿主机内核，无Hypervisor层，性能损耗更小。"
+  },
+  {
+    "id": "q023",
+    "type": "boolean",
+    "stem": "通常在单机上能装上百个容器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "容器轻量、共享内核，单机可轻松运行数百个实例。"
+  },
+  {
+    "id": "q024",
+    "type": "boolean",
+    "stem": "虚拟机在使用的时候系统是完全隔离的，而容器数据轻量化虚拟，很难保证系统的隔离性。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "容器通过Namespace/Cgroup实现进程、网络、文件系统等隔离，安全性良好。"
+  },
+  {
+    "id": "q025",
+    "type": "single",
+    "stem": "RAID的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "独立磁盘冗余阵列"
+      },
+      {
+        "key": "B",
+        "text": "廉价磁盘冗余阵列"
+      },
+      {
+        "key": "C",
+        "text": "联合磁盘阵列"
+      },
+      {
+        "key": "D",
+        "text": "串联磁盘阵列"
+      }
+    ],
+    "answer": "A",
+    "explain": "独立磁盘冗余阵列为官方定义，强调冗余与独立磁盘概念。"
+  },
+  {
+    "id": "q026",
+    "type": "boolean",
+    "stem": "JBOD是最简单的RAID形式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "JBOD只是简单串联，无冗余策略，不属于RAID范畴。"
+  },
+  {
+    "id": "q027",
+    "type": "multi",
+    "stem": "RAID中主要有三个关键概念和技术是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "镜像"
+      },
+      {
+        "key": "B",
+        "text": "数据条带"
+      },
+      {
+        "key": "C",
+        "text": "数据校验"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "镜像提供冗余，条带提升性能，校验实现容错，三者构成RAID核心。"
+  },
+  {
+    "id": "q028",
+    "type": "boolean",
+    "stem": "RAID0提供的是磁盘的镜像冗余。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "RAID0仅条带化，无镜像或校验，故无冗余。"
+  },
+  {
+    "id": "q029",
+    "type": "boolean",
+    "stem": "RAID1提供的是磁盘的镜像冗余。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "RAID1采用完全镜像，一份数据两份存储，实现冗余。"
+  },
+  {
+    "id": "q030",
+    "type": "single",
+    "stem": "以下RAID技术中没有容错性的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RAID0"
+      },
+      {
+        "key": "B",
+        "text": "RAID1"
+      },
+      {
+        "key": "C",
+        "text": "RAID5"
+      },
+      {
+        "key": "D",
+        "text": "RAID10"
+      }
+    ],
+    "answer": "A",
+    "explain": "RAID0无校验或镜像，任意盘失效即数据丢失。"
+  },
+  {
+    "id": "q031",
+    "type": "single",
+    "stem": "以最少硬盘组成的以下RAID阵列中随机读写性能最高的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RAID0"
+      },
+      {
+        "key": "B",
+        "text": "RAID1"
+      },
+      {
+        "key": "C",
+        "text": "RAID5"
+      },
+      {
+        "key": "D",
+        "text": "RAID6"
+      }
+    ],
+    "answer": "A",
+    "explain": "RAID0无校验计算，数据分条并行写入，性能最佳。"
+  },
+  {
+    "id": "q032",
+    "type": "single",
+    "stem": "现有8块硬盘组成RAID，以下几种RAID技术中能够实现冗余，且磁盘可用空间最大的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RAID0"
+      },
+      {
+        "key": "B",
+        "text": "RAID1"
+      },
+      {
+        "key": "C",
+        "text": "RAID5"
+      },
+      {
+        "key": "D",
+        "text": "RAID6"
+      }
+    ],
+    "answer": "C",
+    "explain": "RAID5损失1块盘容量，剩余7块可用，兼顾冗余与空间。"
+  },
+  {
+    "id": "q033",
+    "type": "single",
+    "stem": "现有8块硬盘组成RAID，以下几种RAID技术中磁盘可用空间最大的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RAID0"
+      },
+      {
+        "key": "B",
+        "text": "RAID1"
+      },
+      {
+        "key": "C",
+        "text": "RAID5"
+      },
+      {
+        "key": "D",
+        "text": "RAID6"
+      }
+    ],
+    "answer": "A",
+    "explain": "RAID0无冗余，8块盘全部空间可用。"
+  },
+  {
+    "id": "q034",
+    "type": "single",
+    "stem": "现有8块硬盘组成RAID，在保证容错性最高的情况下，容量尽可能大，应该用哪种RAID？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RAID0"
+      },
+      {
+        "key": "B",
+        "text": "RAID1"
+      },
+      {
+        "key": "C",
+        "text": "RAID5"
+      },
+      {
+        "key": "D",
+        "text": "RAID6"
+      }
+    ],
+    "answer": "B",
+    "explain": "RAID1镜像容错最高，可容忍多盘失效，容量50%。"
+  },
+  {
+    "id": "q035",
+    "type": "single",
+    "stem": "以下RAID技术，哪个在热备份性能上和其他技术都不一样？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RAID0"
+      },
+      {
+        "key": "B",
+        "text": "RAID1"
+      },
+      {
+        "key": "C",
+        "text": "RAID5"
+      },
+      {
+        "key": "D",
+        "text": "RAID6"
+      }
+    ],
+    "answer": "A",
+    "explain": "RAID0无冗余机制，无热备概念，其余RAID均支持热备。"
+  },
+  {
+    "id": "q036",
+    "type": "single",
+    "stem": "SAN的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "存储区域网络"
+      },
+      {
+        "key": "B",
+        "text": "网络附属存储"
+      },
+      {
+        "key": "C",
+        "text": "光纤存储网"
+      },
+      {
+        "key": "D",
+        "text": "IP存储网"
+      }
+    ],
+    "answer": "A",
+    "explain": "存储区域网络专指用网络方式连接存储设备与服务器。"
+  },
+  {
+    "id": "q037",
+    "type": "multi",
+    "stem": "SAN技术一般包括以下哪些项？",
+    "options": [
+      {
+        "key": "A",
+        "text": "vSAN"
+      },
+      {
+        "key": "B",
+        "text": "IP-SAN"
+      },
+      {
+        "key": "C",
+        "text": "VM-SAN"
+      },
+      {
+        "key": "D",
+        "text": "FC-SAN"
+      }
+    ],
+    "answer": "BD",
+    "explain": "IP-SAN与FC-SAN为两大主流SAN技术，vSAN属超融合。"
+  },
+  {
+    "id": "q038",
+    "type": "boolean",
+    "stem": "NAS和SAN的区别在于写反了。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "二者架构、协议、应用场景均不同，并非名称写反。"
+  },
+  {
+    "id": "q039",
+    "type": "boolean",
+    "stem": "NAS和SAN的区别在于前者支持File协议，后者则支持Block协议。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NAS走文件级协议如NFS/CIFS，SAN走块协议如SCSI。"
+  },
+  {
+    "id": "q040",
+    "type": "boolean",
+    "stem": "通常情况下FC-SAN速度优于IP-SAN。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "光纤通道带宽高、延迟低，性能优于以太网IP-SAN。"
+  },
+  {
+    "id": "q041",
+    "type": "boolean",
+    "stem": "FC-SAN的传输距离比IP-SAN远。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "光纤信号随距离衰减大，IP-SAN可借路由中继延伸更远。"
+  },
+  {
+    "id": "q042",
+    "type": "boolean",
+    "stem": "IP-SAN和NAS都是基于IP网络进行数据传输。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "二者均运行在标准以太网TCP/IP之上。"
+  },
+  {
+    "id": "q043",
+    "type": "boolean",
+    "stem": "WebDAV可以通过HTTP协议进行远程文件读写。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "WebDAV扩展HTTP的PUT、DELETE、PROPFIND等方法实现文件操作。"
+  },
+  {
+    "id": "q044",
+    "type": "single",
+    "stem": "VPN的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "虚拟专用网"
+      },
+      {
+        "key": "B",
+        "text": "虚拟公共网"
+      },
+      {
+        "key": "C",
+        "text": "虚拟局域网"
+      },
+      {
+        "key": "D",
+        "text": "虚拟路由网"
+      }
+    ],
+    "answer": "A",
+    "explain": "虚拟专用网通过加密在公网建立私有通信隧道。"
+  },
+  {
+    "id": "q045",
+    "type": "boolean",
+    "stem": "Frp能够实现内网穿透。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "Frp开源工具可将内网服务映射至公网，实现穿透。"
+  },
+  {
+    "id": "q046",
+    "type": "single",
+    "stem": "NAT的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "网络地址转换"
+      },
+      {
+        "key": "B",
+        "text": "网络地址传输"
+      },
+      {
+        "key": "C",
+        "text": "网络地址映射"
+      },
+      {
+        "key": "D",
+        "text": "网络地址代理"
+      }
+    ],
+    "answer": "A",
+    "explain": "网络地址转换将私有地址与公网地址相互转换，节省IP。"
+  },
+  {
+    "id": "q047",
+    "type": "multi",
+    "stem": "云计算的部署模式有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "公共云"
+      },
+      {
+        "key": "B",
+        "text": "私有云"
+      },
+      {
+        "key": "C",
+        "text": "百度云"
+      },
+      {
+        "key": "D",
+        "text": "混合云"
+      }
+    ],
+    "answer": "ABD",
+    "explain": "三大模式：公有云、私有云、混合云，百度云属公有实例。"
+  },
+  {
+    "id": "q048",
+    "type": "multi",
+    "stem": "以下能实现远程桌面的软件有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RDP"
+      },
+      {
+        "key": "B",
+        "text": "OMV"
+      },
+      {
+        "key": "C",
+        "text": "VNC"
+      },
+      {
+        "key": "D",
+        "text": "向日葵"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "OMV为NAS管理系统，其余三款均支持远程桌面。"
+  },
+  {
+    "id": "q049",
+    "type": "multi",
+    "stem": "虚拟化的定义是什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "虚拟化的对象是各种各样的资源"
+      },
+      {
+        "key": "B",
+        "text": "经过虚拟化后的逻辑资源对用户隐藏了不必要的细节"
+      },
+      {
+        "key": "C",
+        "text": "用户可以在虚拟环境中实现其在真实环境中的部分或者全部功能"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "三点共同描述虚拟化将物理资源抽象为逻辑资源的核心思想。"
+  },
+  {
+    "id": "q050",
+    "type": "single",
+    "stem": "VMware公司的服务器虚拟化软件名称是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "vSphere"
+      },
+      {
+        "key": "B",
+        "text": "ESXi"
+      },
+      {
+        "key": "C",
+        "text": "NSX"
+      },
+      {
+        "key": "D",
+        "text": "VSAN"
+      }
+    ],
+    "answer": "A",
+    "explain": "vSphere是VMware服务器虚拟化套件品牌，ESXi为其核心组件。"
+  },
+  {
+    "id": "q051",
+    "type": "single",
+    "stem": "VMware ESXi 5.5是vSphere 5.5的？",
+    "options": [
+      {
+        "key": "A",
+        "text": "核心组件"
+      },
+      {
+        "key": "B",
+        "text": "管理控制台"
+      },
+      {
+        "key": "C",
+        "text": "客户端插件"
+      },
+      {
+        "key": "D",
+        "text": "存储插件"
+      }
+    ],
+    "answer": "A",
+    "explain": "ESXi即裸金属虚拟化操作系统，为vSphere基础核心。"
+  },
+  {
+    "id": "q052",
+    "type": "single",
+    "stem": "VMware的网络虚拟化平台是VMware？",
+    "options": [
+      {
+        "key": "A",
+        "text": "NSX"
+      },
+      {
+        "key": "B",
+        "text": "VSAN"
+      },
+      {
+        "key": "C",
+        "text": "ESXi"
+      },
+      {
+        "key": "D",
+        "text": "vCenter"
+      }
+    ],
+    "answer": "A",
+    "explain": "NSX提供软件定义网络、微分段与分布式防火墙。"
+  },
+  {
+    "id": "q053",
+    "type": "boolean",
+    "stem": "Docker是一种小型虚拟化技术，几乎没有性能开销，可以很容易地在机器和数据中心运行。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "容器共享宿主机内核，启动快、占用少、部署密度高。"
+  },
+  {
+    "id": "q054",
+    "type": "boolean",
+    "stem": "Docker和虚拟机在启动速度上的比较，容器是秒级，而虚拟机是分钟级。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "容器无需引导完整操作系统，启动通常<1s；虚拟机需完整POST+OS引导。"
+  },
+  {
+    "id": "q055",
+    "type": "boolean",
+    "stem": "虚拟机在使用的时候系统是完全隔离的，而容器数据轻量化虚拟，很难保证系统的隔离性。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "容器通过Linux Namespace/Cgroup实现进程、网络、挂载等隔离，安全性足够。"
+  },
+  {
+    "id": "q056",
+    "type": "single",
+    "stem": "RAID的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "独立磁盘冗余阵列"
+      },
+      {
+        "key": "B",
+        "text": "廉价磁盘冗余阵列"
+      },
+      {
+        "key": "C",
+        "text": "联合磁盘阵列"
+      },
+      {
+        "key": "D",
+        "text": "串联磁盘阵列"
+      }
+    ],
+    "answer": "A",
+    "explain": "独立磁盘冗余阵列强调磁盘独立与冗余，非“廉价”。"
+  },
+  {
+    "id": "q057",
+    "type": "boolean",
+    "stem": "JBOD是最简单的RAID形式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "JBOD只是“Just a Bunch Of Disks”，无冗余，不属于RAID。"
+  },
+  {
+    "id": "q058",
+    "type": "single",
+    "stem": "以下RAID技术，哪个在热备份性能上和其他技术都不一样？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RAID0"
+      },
+      {
+        "key": "B",
+        "text": "RAID1"
+      },
+      {
+        "key": "C",
+        "text": "RAID5"
+      },
+      {
+        "key": "D",
+        "text": "RAID6"
+      }
+    ],
+    "answer": "A",
+    "explain": "RAID0无冗余，不存在热备概念；其余RAID均支持热备盘。"
+  },
+  {
+    "id": "q059",
+    "type": "single",
+    "stem": "SAN的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "存储区域网络"
+      },
+      {
+        "key": "B",
+        "text": "网络附属存储"
+      },
+      {
+        "key": "C",
+        "text": "光纤存储网"
+      },
+      {
+        "key": "D",
+        "text": "IP存储网"
+      }
+    ],
+    "answer": "A",
+    "explain": "存储区域网络专指用网络连接服务器与存储设备，与NAS区别明显。"
+  },
+  {
+    "id": "q060",
+    "type": "multi",
+    "stem": "SAN技术一般包括以下哪些项？",
+    "options": [
+      {
+        "key": "A",
+        "text": "vSAN"
+      },
+      {
+        "key": "B",
+        "text": "IP-SAN"
+      },
+      {
+        "key": "C",
+        "text": "VM-SAN"
+      },
+      {
+        "key": "D",
+        "text": "FC-SAN"
+      }
+    ],
+    "answer": "BD",
+    "explain": "IP-SAN与FC-SAN为两大主流，vSAN属超融合非传统SAN。"
+  },
+  {
+    "id": "q061",
+    "type": "boolean",
+    "stem": "NAS和SAN的区别在于前者支持File协议，后者则支持Block协议。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NAS走NFS/CIFS文件级，SAN走SCSI/FC块级。"
+  },
+  {
+    "id": "q062",
+    "type": "boolean",
+    "stem": "通常情况下FC-SAN速度优于IP-SAN。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "光纤通道带宽高、延迟低，性能优于以太网IP-SAN。"
+  },
+  {
+    "id": "q063",
+    "type": "boolean",
+    "stem": "FC-SAN的传输距离比IP-SAN远。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "光纤信号衰减大，通常<10 km；IP-SAN可借路由无限延伸。"
+  },
+  {
+    "id": "q064",
+    "type": "boolean",
+    "stem": "IP-SAN和NAS都是基于IP网络进行数据传输。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "二者均运行在标准TCP/IP以太网上。"
+  },
+  {
+    "id": "q065",
+    "type": "boolean",
+    "stem": "WebDAV可以通过HTTP协议进行远程文件读写。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "WebDAV扩展HTTP方法（PUT、DELETE、PROPFIND）实现文件操作。"
+  },
+  {
+    "id": "q066",
+    "type": "single",
+    "stem": "VPN的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "虚拟专用网"
+      },
+      {
+        "key": "B",
+        "text": "虚拟公共网"
+      },
+      {
+        "key": "C",
+        "text": "虚拟局域网"
+      },
+      {
+        "key": "D",
+        "text": "虚拟路由网"
+      }
+    ],
+    "answer": "A",
+    "explain": "虚拟专用网通过加密隧道在公网建立私有通信链路。"
+  },
+  {
+    "id": "q067",
+    "type": "boolean",
+    "stem": "Frp能够实现内网穿透。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "Frp开源工具可将内网服务映射至公网，实现反向代理穿透。"
+  },
+  {
+    "id": "q068",
+    "type": "single",
+    "stem": "NAT的标准中文解释是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "网络地址转换"
+      },
+      {
+        "key": "B",
+        "text": "网络地址传输"
+      },
+      {
+        "key": "C",
+        "text": "网络地址映射"
+      },
+      {
+        "key": "D",
+        "text": "网络地址代理"
+      }
+    ],
+    "answer": "A",
+    "explain": "网络地址转换将私有地址与公网地址相互转换，节省IPv4。"
+  },
+  {
+    "id": "q069",
+    "type": "multi",
+    "stem": "云计算的部署模式有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "公共云"
+      },
+      {
+        "key": "B",
+        "text": "私有云"
+      },
+      {
+        "key": "C",
+        "text": "百度云"
+      },
+      {
+        "key": "D",
+        "text": "混合云"
+      }
+    ],
+    "answer": "ABD",
+    "explain": "三大模式：公有、私有、混合；百度云属公有云实例。"
+  },
+  {
+    "id": "q070",
+    "type": "multi",
+    "stem": "以下能实现远程桌面的软件有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "RDP"
+      },
+      {
+        "key": "B",
+        "text": "OMV"
+      },
+      {
+        "key": "C",
+        "text": "VNC"
+      },
+      {
+        "key": "D",
+        "text": "向日葵"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "OMV为NAS管理系统，其余三款均支持远程桌面协议。"
+  },
+  {
+    "id": "q071",
+    "type": "single",
+    "stem": "在Debian10里面直接打开常用软件添加删除界面的命令是什么？",
+    "options": [
+      {
+        "key": "A",
+        "text": "tasksel"
+      },
+      {
+        "key": "B",
+        "text": "aptitude"
+      },
+      {
+        "key": "C",
+        "text": "dpkg"
+      },
+      {
+        "key": "D",
+        "text": "apt"
+      }
+    ],
+    "answer": "A",
+    "explain": "tasksel提供字符界面快速选择软件集合。"
+  },
+  {
+    "id": "q072",
+    "type": "single",
+    "stem": "将用户设置为可以使用sudo状态的配置文件是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/sudoers"
+      },
+      {
+        "key": "B",
+        "text": "/etc/passwd"
+      },
+      {
+        "key": "C",
+        "text": "/etc/shadow"
+      },
+      {
+        "key": "D",
+        "text": "/etc/group"
+      }
+    ],
+    "answer": "A",
+    "explain": "/etc/sudoers定义哪些用户/组可执行sudo及权限。"
+  },
+  {
+    "id": "q073",
+    "type": "single",
+    "stem": "Windows系统的hosts文件一般保存在哪？",
+    "options": [
+      {
+        "key": "A",
+        "text": "C:\\Windows\\System32\\drivers\\etc"
+      },
+      {
+        "key": "B",
+        "text": "C:\\Windows\\System32\\etc"
+      },
+      {
+        "key": "C",
+        "text": "C:\\Windows\\etc"
+      },
+      {
+        "key": "D",
+        "text": "C:\\etc"
+      }
+    ],
+    "answer": "A",
+    "explain": "系统默认路径为drivers\\etc\\hosts，用于静态域名解析。"
+  },
+  {
+    "id": "q074",
+    "type": "single",
+    "stem": "Linux系统的hosts文件一般保存在哪？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc"
+      },
+      {
+        "key": "B",
+        "text": "/usr/etc"
+      },
+      {
+        "key": "C",
+        "text": "/home/etc"
+      },
+      {
+        "key": "D",
+        "text": "/drivers/etc"
+      }
+    ],
+    "answer": "A",
+    "explain": "Linux统一放在/etc/hosts，实现本地域名解析。"
+  },
+  {
+    "id": "q075",
+    "type": "boolean",
+    "stem": "DNS是一种基于集中式数据库的域名系统。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "DNS采用分布式层级数据库，非单一中心。"
+  },
+  {
+    "id": "q076",
+    "type": "boolean",
+    "stem": "DNS域名解析可靠性高，即使单个节点出了故障，也不会妨碍整个系统的正常运行。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "分布式设计加缓存，使单点故障影响有限。"
+  },
+  {
+    "id": "q077",
+    "type": "boolean",
+    "stem": "DNS的域名空间最大深度不超过127层。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "RFC规定每标签63字节，全长253字节，深度≤127层。"
+  },
+  {
+    "id": "q078",
+    "type": "multi",
+    "stem": "域名系统的一般组成包括？",
+    "options": [
+      {
+        "key": "A",
+        "text": "DNS服务器"
+      },
+      {
+        "key": "B",
+        "text": "DNS客户端"
+      },
+      {
+        "key": "C",
+        "text": "资源记录"
+      },
+      {
+        "key": "D",
+        "text": "名称空间"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "四部分协同完成域名解析与资源管理。"
+  },
+  {
+    "id": "q079",
+    "type": "single",
+    "stem": "域名系统中DNS服务器的功能是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "指定用于组织名称的域的层次结构"
+      },
+      {
+        "key": "B",
+        "text": "将域名映射到特定类型的资源信息，注册或解析名称时使用"
+      },
+      {
+        "key": "C",
+        "text": "存储资源记录并提供名称查询服务的程序"
+      },
+      {
+        "key": "D",
+        "text": "用来查询服务器获取名称解析信息"
+      }
+    ],
+    "answer": "C",
+    "explain": "DNS服务器核心职责是存储RR并响应查询。"
+  },
+  {
+    "id": "q080",
+    "type": "boolean",
+    "stem": "在DNS系统中，区域通常比所对应的域所代表的范围大。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "区域是域的子集，一个域可划分为多个区域以便管理。"
+  },
+  {
+    "id": "q081",
+    "type": "boolean",
+    "stem": "为了保证DNS的解析正确，一台DNS服务器通常只能管理一个区域。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "一台服务器可承载多个正/反向区域，提高利用率。"
+  },
+  {
+    "id": "q082",
+    "type": "single",
+    "stem": "在DNS系统中，反向解析指的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "根据计算机的IP地址解析其DNS名称"
+      },
+      {
+        "key": "B",
+        "text": "根据计算机的DNS名称解析相应的IP地址"
+      },
+      {
+        "key": "C",
+        "text": "根据计算机的MAC地址解析相应的IP地址"
+      },
+      {
+        "key": "D",
+        "text": "根据计算机的IP地址解析相应的MAC地址"
+      }
+    ],
+    "answer": "A",
+    "explain": "反向解析即通过in-addr.arpa域由IP查域名。"
+  },
+  {
+    "id": "q083",
+    "type": "boolean",
+    "stem": "HOSTS文件是比较老的域名查询文件，在现今的操作系统中一般都不再用它。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "HOSTS仍用于静态解析、测试与应急，系统优先读取。"
+  },
+  {
+    "id": "q084",
+    "type": "boolean",
+    "stem": "NetBIOS名称解析，广播方式只能解析本网段的NetBIOS名称。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "广播不跨路由，仅限同一广播域。"
+  },
+  {
+    "id": "q085",
+    "type": "multi",
+    "stem": "WINS组件一般包括有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "WINS服务器"
+      },
+      {
+        "key": "B",
+        "text": "WINS客户端"
+      },
+      {
+        "key": "C",
+        "text": "WINS代理"
+      },
+      {
+        "key": "D",
+        "text": "WINS数据库"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "四部分协同完成NetBIOS名称注册与解析。"
+  },
+  {
+    "id": "q086",
+    "type": "single",
+    "stem": "以下哪条命令可显示和查看客户端域名解析程序缓存？",
+    "options": [
+      {
+        "key": "A",
+        "text": "ipconfig"
+      },
+      {
+        "key": "B",
+        "text": "ipconfig /all"
+      },
+      {
+        "key": "C",
+        "text": "ipconfig /flushdns"
+      },
+      {
+        "key": "D",
+        "text": "ipconfig /displaydns"
+      }
+    ],
+    "answer": "D",
+    "explain": "/displaydns专门列出本地DNS缓存内容。"
+  },
+  {
+    "id": "q087",
+    "type": "boolean",
+    "stem": "对于仅有一个网段的独立局域网，没有必要部署WINS服务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "单网段可用广播或LMHOSTS完成NetBIOS解析，无需WINS。"
+  },
+  {
+    "id": "q088",
+    "type": "multi",
+    "stem": "与关系型数据库相比，目录数据库特点如下？",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据读取和查询效率非常高，比关系型数据库能够快一个数量级"
+      },
+      {
+        "key": "B",
+        "text": "数据写入效率较低，适用于数据不需要经常改动，但需要频繁读出的情况"
+      },
+      {
+        "key": "C",
+        "text": "以树状的层次结构来描述数据信息"
+      },
+      {
+        "key": "D",
+        "text": "能够维持目录对象名称的唯一性"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "四点准确概括目录数据库读快写慢、树形组织、唯一命名等特性。"
+  },
+  {
+    "id": "q089",
+    "type": "single",
+    "stem": "Linux平台常用的目录服务软件是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "LDAPv3"
+      },
+      {
+        "key": "B",
+        "text": "LDAPv2"
+      },
+      {
+        "key": "C",
+        "text": "OpenLDAP"
+      },
+      {
+        "key": "D",
+        "text": "Active Directory"
+      }
+    ],
+    "answer": "C",
+    "explain": "OpenLDAP为开源LDAP服务器，广泛用于Linux。"
+  },
+  {
+    "id": "q090",
+    "type": "boolean",
+    "stem": "Active Directory建立在域的基础上，由域控制器对网络中的资源实行集中管理和控制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "AD核心功能即通过域控制器集中认证与策略管理。"
+  },
+  {
+    "id": "q091",
+    "type": "single",
+    "stem": "Active Directory的功能不包括以下哪些选项？",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据存储"
+      },
+      {
+        "key": "B",
+        "text": "查询和索引机制的建立"
+      },
+      {
+        "key": "C",
+        "text": "通过网络分发目录数据的复制服务"
+      },
+      {
+        "key": "D",
+        "text": "提供磁盘逻辑卷管理"
+      }
+    ],
+    "answer": "D",
+    "explain": "磁盘逻辑卷管理由LVM/RAID完成，非AD范畴。"
+  },
+  {
+    "id": "q092",
+    "type": "multi",
+    "stem": "Active Directory对象可分为几种类型？",
+    "options": [
+      {
+        "key": "A",
+        "text": "容器对象"
+      },
+      {
+        "key": "B",
+        "text": "非容器对象"
+      },
+      {
+        "key": "C",
+        "text": "上层对象"
+      },
+      {
+        "key": "D",
+        "text": "下层对象"
+      }
+    ],
+    "answer": "AB",
+    "explain": "容器可含子对象，非容器（叶对象）不能，为AD基本分类。"
+  },
+  {
+    "id": "q093",
+    "type": "single",
+    "stem": "Active Directory对象的主要类别不包括以下的哪一项？",
+    "options": [
+      {
+        "key": "A",
+        "text": "用户和组"
+      },
+      {
+        "key": "B",
+        "text": "联系人和组织单位"
+      },
+      {
+        "key": "C",
+        "text": "用户名和密码"
+      },
+      {
+        "key": "D",
+        "text": "计算机和打印机"
+      }
+    ],
+    "answer": "C",
+    "explain": "密码是属性而非对象类别。"
+  },
+  {
+    "id": "q094",
+    "type": "multi",
+    "stem": "域中包括以下几类的计算机？",
+    "options": [
+      {
+        "key": "A",
+        "text": "域控制器"
+      },
+      {
+        "key": "B",
+        "text": "成员服务器"
+      },
+      {
+        "key": "C",
+        "text": "工作站"
+      },
+      {
+        "key": "D",
+        "text": "笔记本"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "笔记本属于工作站范畴，不再单列。"
+  },
+  {
+    "id": "q095",
+    "type": "multi",
+    "stem": "规划Windows网络结构时，通常有哪几种工作方式？",
+    "options": [
+      {
+        "key": "A",
+        "text": "工作组"
+      },
+      {
+        "key": "B",
+        "text": "域"
+      },
+      {
+        "key": "C",
+        "text": "对等网"
+      },
+      {
+        "key": "D",
+        "text": "家庭网"
+      }
+    ],
+    "answer": "AB",
+    "explain": "Windows网络核心模型即工作组与域。"
+  },
+  {
+    "id": "q096",
+    "type": "boolean",
+    "stem": "域控制器作为域中最重要的服务器，不允许它降级为成员服务器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "运行dcpromo可降级为普通成员服务器，过程可逆。"
+  },
+  {
+    "id": "q097",
+    "type": "single",
+    "stem": "本课程中LDAP是指？",
+    "options": [
+      {
+        "key": "A",
+        "text": "轻量级目录访问协议"
+      },
+      {
+        "key": "B",
+        "text": "远程数据地址协议"
+      },
+      {
+        "key": "C",
+        "text": "轻量数据交换协议"
+      },
+      {
+        "key": "D",
+        "text": "长数据访问热点"
+      }
+    ],
+    "answer": "A",
+    "explain": "LDAP即Lightweight Directory Access Protocol。"
+  },
+  {
+    "id": "q098",
+    "type": "multi",
+    "stem": "文件服务器的部署主要考虑的因素有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "存取速度"
+      },
+      {
+        "key": "B",
+        "text": "存储容量"
+      },
+      {
+        "key": "C",
+        "text": "存储位置"
+      },
+      {
+        "key": "D",
+        "text": "安全措施"
+      }
+    ],
+    "answer": "ABD",
+    "explain": "位置非核心考量，速度、容量、安全更关键。"
+  },
+  {
+    "id": "q099",
+    "type": "boolean",
+    "stem": "使用PC机就能非常快速地建立文件服务器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "普通PC安装Linux/Windows Server即可搭建文件服务，门槛低。"
+  },
+  {
+    "id": "q100",
+    "type": "boolean",
+    "stem": "硬件打印服务器有别于软件打印服务器，可以不用网络地址实现多用户打印。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "硬件打印服务器仍需IP地址接入网络，才能为多用户服务。"
+  },
+  {
+    "id": "q101",
+    "type": "boolean",
+    "stem": "Windows计算机将所连接的打印机共享出来，就可成为软件打印服务器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "共享后网内其他机可通过\\computer\\printer方式提交打印任务。"
+  },
+  {
+    "id": "q102",
+    "type": "single",
+    "stem": "Windows操作系统通常默认使用哪个协议来实现文件和打印共享？",
+    "options": [
+      {
+        "key": "A",
+        "text": "FTP"
+      },
+      {
+        "key": "B",
+        "text": "TELNET"
+      },
+      {
+        "key": "C",
+        "text": "Samba"
+      },
+      {
+        "key": "D",
+        "text": "SMB/CIFS"
+      }
+    ],
+    "answer": "D",
+    "explain": "SMB/CIFS为Windows原生文件与打印共享协议。"
+  },
+  {
+    "id": "q103",
+    "type": "boolean",
+    "stem": "文件服务器的核心功能是文件共享，在Windows系统中是通过共享文件夹实现的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "共享文件夹是Windows文件服务基本单元，通过UNC访问。"
+  },
+  {
+    "id": "q104",
+    "type": "multi",
+    "stem": "文件服务器的配置管理工作包括有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "查看、创建和配置共享文件夹"
+      },
+      {
+        "key": "B",
+        "text": "创建、查看和设置共享资源权限"
+      },
+      {
+        "key": "C",
+        "text": "查看和管理通过网络连接到计算机的用户和打开的文件"
+      },
+      {
+        "key": "D",
+        "text": "查看、创建和配置磁盘分区"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "磁盘分区属存储初始化，非日常文件服务管理范畴。"
+  },
+  {
+    "id": "q105",
+    "type": "multi",
+    "stem": "一般情况下，哪些组成员能够配置管理共享文件夹？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Guest"
+      },
+      {
+        "key": "B",
+        "text": "Users"
+      },
+      {
+        "key": "C",
+        "text": "Administrators"
+      },
+      {
+        "key": "D",
+        "text": "Server Operators"
+      }
+    ],
+    "answer": "CD",
+    "explain": "Administrators与Server Operators拥有共享管理权限。"
+  },
+  {
+    "id": "q106",
+    "type": "multi",
+    "stem": "以下共享名属于特殊共享资源的有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "ADMINS"
+      },
+      {
+        "key": "B",
+        "text": "DESKTOP"
+      },
+      {
+        "key": "C",
+        "text": "SYSVOL"
+      },
+      {
+        "key": "D",
+        "text": "PRINTS"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "ADMINS（远程管理）、SYSVOL（域共享）、PRINTS（打印驱动）为系统特殊共享。"
+  },
+  {
+    "id": "q107",
+    "type": "boolean",
+    "stem": "使用共享文件夹时，该文件夹如果位于NTFS分区，其安全性较FAT分区更高。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NTFS支持精细ACL、加密、审计，FAT仅简单权限。"
+  },
+  {
+    "id": "q108",
+    "type": "boolean",
+    "stem": "共享文件夹时，权限“允许”的优先级高于权限“拒绝”。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Windows坚持“拒绝优先”，任何拒绝均覆盖允许。"
+  },
+  {
+    "id": "q109",
+    "type": "boolean",
+    "stem": "共享文件夹时，权限具有累加性，当用户隶属多个组时，其权限是所有组权限的总和。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "同一资源多个组权限相加，再与拒绝比较。"
+  },
+  {
+    "id": "q110",
+    "type": "single",
+    "stem": "在Windows系统中，UNC表示通用命名约定，一般常用的格式为？",
+    "options": [
+      {
+        "key": "A",
+        "text": "\\\\服务器名\\共享名"
+      },
+      {
+        "key": "B",
+        "text": "//服务器名/共享名"
+      },
+      {
+        "key": "C",
+        "text": "\\\\服务器名\\用户名\\共享名"
+      },
+      {
+        "key": "D",
+        "text": "//服务器名/用户名/共享名"
+      }
+    ],
+    "answer": "A",
+    "explain": "UNC标准格式：\\\\host\\share，反斜杠开头。"
+  },
+  {
+    "id": "q111",
+    "type": "multi",
+    "stem": "UNC一般可以直接在哪些地方输入进行访问？",
+    "options": [
+      {
+        "key": "A",
+        "text": "文本文件中"
+      },
+      {
+        "key": "B",
+        "text": "浏览器地址栏"
+      },
+      {
+        "key": "C",
+        "text": "Windows的“开始”→“运行”中"
+      },
+      {
+        "key": "D",
+        "text": "Windows资源管理器地址栏"
+      }
+    ],
+    "answer": "BCD",
+    "explain": "文本文件仅记录，不能直接访问；其余均可解析UNC。"
+  },
+  {
+    "id": "q112",
+    "type": "single",
+    "stem": "Samba服务通常应用于哪些操作系统之间？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Windows系统之间"
+      },
+      {
+        "key": "B",
+        "text": "Windows系统和Linux系统"
+      },
+      {
+        "key": "C",
+        "text": "Linux系统之间"
+      },
+      {
+        "key": "D",
+        "text": "Windows XP和Windows Server系统之间"
+      }
+    ],
+    "answer": "B",
+    "explain": "Samba主要解决Linux与Windows互访，实现SMB/CIFS兼容。"
+  },
+  {
+    "id": "q113",
+    "type": "boolean",
+    "stem": "Samba是一种网络协议，是一套让UNIX类系统能够应用Microsoft网络通信协议的协议。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Samba是服务/软件，非协议；协议为SMB/CIFS。"
+  },
+  {
+    "id": "q114",
+    "type": "multi",
+    "stem": "Samba服务是由以下哪些进程组成？",
+    "options": [
+      {
+        "key": "A",
+        "text": "smb"
+      },
+      {
+        "key": "B",
+        "text": "smbd"
+      },
+      {
+        "key": "C",
+        "text": "nmbd"
+      },
+      {
+        "key": "D",
+        "text": "samba"
+      }
+    ],
+    "answer": "BC",
+    "explain": "smbd处理文件/打印，nmbd负责NetBIOS名称服务。"
+  },
+  {
+    "id": "q115",
+    "type": "single",
+    "stem": "新版的Samba中，nmbd和smbd使用的端口是哪个？",
+    "options": [
+      {
+        "key": "A",
+        "text": "137"
+      },
+      {
+        "key": "B",
+        "text": "138"
+      },
+      {
+        "key": "C",
+        "text": "139"
+      },
+      {
+        "key": "D",
+        "text": "445"
+      }
+    ],
+    "answer": "D",
+    "explain": "新版统一走TCP 445，旧版137-139用于NetBIOS。"
+  },
+  {
+    "id": "q116",
+    "type": "multi",
+    "stem": "Samba服务的工作过程可以分为以下几个步骤？",
+    "options": [
+      {
+        "key": "A",
+        "text": "协议协商"
+      },
+      {
+        "key": "B",
+        "text": "建立连接"
+      },
+      {
+        "key": "C",
+        "text": "访问共享资源"
+      },
+      {
+        "key": "D",
+        "text": "断开连接"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "四步完整描述SMB会话生命周期。"
+  },
+  {
+    "id": "q117",
+    "type": "single",
+    "stem": "Samba的配置文件一般放在哪个目录中？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/samba"
+      },
+      {
+        "key": "B",
+        "text": "/etc/smb"
+      },
+      {
+        "key": "C",
+        "text": "/etc/samba/smb"
+      },
+      {
+        "key": "D",
+        "text": "/etc"
+      }
+    ],
+    "answer": "A",
+    "explain": "默认配置目录：/etc/samba/，主配置文件smb.conf位于其下。"
+  },
+  {
+    "id": "q118",
+    "type": "single",
+    "stem": "Samba的主配置文件名为？",
+    "options": [
+      {
+        "key": "A",
+        "text": "samba.conf"
+      },
+      {
+        "key": "B",
+        "text": "sam.conf"
+      },
+      {
+        "key": "C",
+        "text": "samb.conf"
+      },
+      {
+        "key": "D",
+        "text": "smb.conf"
+      }
+    ],
+    "answer": "D",
+    "explain": "主配置文件固定为smb.conf。"
+  },
+  {
+    "id": "q119",
+    "type": "multi",
+    "stem": "Samba服务的日志文件是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "samba.log"
+      },
+      {
+        "key": "B",
+        "text": "smbd.log"
+      },
+      {
+        "key": "C",
+        "text": "nmbd.log"
+      },
+      {
+        "key": "D",
+        "text": "nmb.log"
+      }
+    ],
+    "answer": "BC",
+    "explain": "smbd.log与nmbd.log分别记录文件/打印与名称服务日志。"
+  },
+  {
+    "id": "q102",
+    "type": "single",
+    "stem": "通常Samba服务的日志文件保存位置在？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/log/samba"
+      },
+      {
+        "key": "B",
+        "text": "/var/log/samba"
+      },
+      {
+        "key": "C",
+        "text": "/usr/log/samba"
+      },
+      {
+        "key": "D",
+        "text": "/boot/log/samba"
+      }
+    ],
+    "answer": "B",
+    "explain": "日志统一放/var/log/samba/，符合Linux日志规范。"
+  },
+  {
+    "id": "q121",
+    "type": "boolean",
+    "stem": "在本课程中NFS指的是New File System，即新型文件系统。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "NFS即Network File System，网络文件系统，非New。"
+  },
+  {
+    "id": "q122",
+    "type": "multi",
+    "stem": "NFS网络文件系统的特点有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "需要共享的数据可以存放在NFS服务器，其他主机上的用户可以通过NFS服务访问NFS服务器上的共享资源，节省客户端本地硬盘空间，便于集中管理"
+      },
+      {
+        "key": "B",
+        "text": "远程主机上的文件的物理位置发生变化，将会使客户访问方式发生变化"
+      },
+      {
+        "key": "C",
+        "text": "客户访问远程主机上的文件和访问本地主机上的资源一样，是透明的"
+      },
+      {
+        "key": "D",
+        "text": "可以为不同客户设置不同的访问权限"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "物理位置变化对客户透明，访问方式不变，故B错。"
+  },
+  {
+    "id": "q123",
+    "type": "boolean",
+    "stem": "NFS服务是基于C/S模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NFS经典客户端/服务器架构，服务器导出，客户端挂载。"
+  },
+  {
+    "id": "q124",
+    "type": "boolean",
+    "stem": "NFS服务器是访问输出文件的计算机。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "NFS服务器是“提供”共享文件的计算机，客户端才“访问”。"
+  },
+  {
+    "id": "q125",
+    "type": "boolean",
+    "stem": "NFS客户端是提供输出文件（共享目录文件）的计算机。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "客户端消费共享，服务器提供输出，角色颠倒。"
+  },
+  {
+    "id": "q126",
+    "type": "boolean",
+    "stem": "NFS客户端和NFS服务器通过远程过程调用协议实现数据传输。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NFS基于RPC，端口映射与数据操作均通过RPC完成。"
+  },
+  {
+    "id": "q127",
+    "type": "boolean",
+    "stem": "NFS服务器开启服务之后会一直主动查找需要连接自己的客户端主机。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "NFS为被动服务，等待客户端挂载请求，不主动发现。"
+  },
+  {
+    "id": "q128",
+    "type": "multi",
+    "stem": "Linux下NFS服务所必需的几个进程是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "rpc.locked"
+      },
+      {
+        "key": "B",
+        "text": "rpcbind"
+      },
+      {
+        "key": "C",
+        "text": "rpc.mountd"
+      },
+      {
+        "key": "D",
+        "text": "rpc.nfsd"
+      }
+    ],
+    "answer": "BCD",
+    "explain": "rpcbind（端口映射）、rpc.mountd（挂载权检）、rpc.nfsd（文件服务）为必需。"
+  },
+  {
+    "id": "q129",
+    "type": "single",
+    "stem": "rpc.nfsd守护进程的主要作用是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "提供了NFS和配额管理程序之间的接口"
+      },
+      {
+        "key": "B",
+        "text": "判断、检查客户端是否具备登录主机的权限，负责处理NFS请求"
+      },
+      {
+        "key": "C",
+        "text": "管理NFS的文件系统"
+      },
+      {
+        "key": "D",
+        "text": "进行端口映射工作"
+      }
+    ],
+    "answer": "B",
+    "explain": "rpc.nfsd核心职责是处理客户端文件操作RPC请求。"
+  },
+  {
+    "id": "q130",
+    "type": "single",
+    "stem": "rpcbind的主要功能是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "进行端口映射"
+      },
+      {
+        "key": "B",
+        "text": "判断、检查客户端是否具备登录主机的权限，负责处理NFS请求"
+      },
+      {
+        "key": "C",
+        "text": "管理NFS的文件系统"
+      },
+      {
+        "key": "D",
+        "text": "处理客户端与服务器之间的文件锁定问题，确定文件的一致性"
+      }
+    ],
+    "answer": "A",
+    "explain": "rpcbind（旧称portmap）提供RPC程序号与端口映射。"
+  },
+  {
+    "id": "q131",
+    "type": "boolean",
+    "stem": "Linux系统下的NFS服务，用来处理崩溃系统的锁定恢复的进程是可选进程。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "rpc.lockd（文件锁）与rpc.statd（状态恢复）为可选，非必需。"
+  },
+  {
+    "id": "q132",
+    "type": "single",
+    "stem": "通常Linux系统的NFS服务配置文件是（包括目录）？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/exports"
+      },
+      {
+        "key": "B",
+        "text": "/etc/config"
+      },
+      {
+        "key": "C",
+        "text": "/etc/nfs/exports"
+      },
+      {
+        "key": "D",
+        "text": "/etc/nfs/config"
+      }
+    ],
+    "answer": "A",
+    "explain": "/etc/exports控制哪些目录以何权限导出，是NFS核心配置。"
+  },
+  {
+    "id": "q133",
+    "type": "single",
+    "stem": "Linux系统的NFS服务，以下哪个对应于“数据会先暂存于内存当中，而非直接写入硬盘”的权限？",
+    "options": [
+      {
+        "key": "A",
+        "text": "rw"
+      },
+      {
+        "key": "B",
+        "text": "ro"
+      },
+      {
+        "key": "C",
+        "text": "sync"
+      },
+      {
+        "key": "D",
+        "text": "async"
+      }
+    ],
+    "answer": "D",
+    "explain": "async先写内存后刷盘，提高速度，但可能丢数据。"
+  },
+  {
+    "id": "q134",
+    "type": "single",
+    "stem": "Linux系统的NFS服务，权限ro代表的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "可读写权限"
+      },
+      {
+        "key": "B",
+        "text": "只读权限"
+      },
+      {
+        "key": "C",
+        "text": "数据同步写入到内存与硬盘当中"
+      },
+      {
+        "key": "D",
+        "text": "数据会先暂存于内存当中，而非直接写入硬盘"
+      }
+    ],
+    "answer": "B",
+    "explain": "ro即read-only，客户端只能读取，不能写入。"
+  },
+  {
+    "id": "q135",
+    "type": "single",
+    "stem": "Linux系统中，NFS服务的“root_squash”权限是指？",
+    "options": [
+      {
+        "key": "A",
+        "text": "在登录NFS主机使用共享目录的用户如果是root，那么这个用户的权限将被压缩成匿名用户，通常它的UID与GID都会变成nobody"
+      },
+      {
+        "key": "B",
+        "text": "登录NFS主机使用共享目录的用户，如果是root，那么对于共享目录具有root权限"
+      },
+      {
+        "key": "C",
+        "text": "数据同步写入到内存与硬盘当中"
+      },
+      {
+        "key": "D",
+        "text": "数据会先暂存于内存当中，而非直接写入硬盘"
+      }
+    ],
+    "answer": "A",
+    "explain": "root_squash防止客户端root获得服务端root权限，映射为nobody。"
+  },
+  {
+    "id": "q136",
+    "type": "boolean",
+    "stem": "在本课程中FTP是指的优先文件传输协议。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "FTP即File Transfer Protocol，文件传输协议，非“优先”。"
+  },
+  {
+    "id": "q137",
+    "type": "boolean",
+    "stem": "FTP大大简化了文件传输的复杂性，但是需要注意不同的操作系统之间不能直接进行文件传输。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "FTP基于标准协议，跨操作系统传输正是其设计目标。"
+  },
+  {
+    "id": "q138",
+    "type": "boolean",
+    "stem": "FTP协议工作的时候，服务端和客户端使用了4个端口，分别是21、20、1031、1032端口。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "标准命令21，数据20；被动模式服务器端口随机，非固定1031/1032。"
+  },
+  {
+    "id": "q139",
+    "type": "multi",
+    "stem": "FTP服务有以下几种工作模式？",
+    "options": [
+      {
+        "key": "A",
+        "text": "服务器模式"
+      },
+      {
+        "key": "B",
+        "text": "客户端模式"
+      },
+      {
+        "key": "C",
+        "text": "主动传输模式"
+      },
+      {
+        "key": "D",
+        "text": "被动传输模式"
+      }
+    ],
+    "answer": "CD",
+    "explain": "FTP分主动（PORT）与被动（PASV）两种数据传输模式。"
+  },
+  {
+    "id": "q140",
+    "type": "boolean",
+    "stem": "如果需要跨网段使用FTP服务器，FTP服务器必须工作在被动模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "被动模式由服务器决定数据端口，客户端主动连，适合防火墙/NAT环境。"
+  },
+  {
+    "id": "q141",
+    "type": "boolean",
+    "stem": "IIS组件中包括有FTP服务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "IIS自带FTP Server角色，安装即可启用。"
+  },
+  {
+    "id": "q142",
+    "type": "boolean",
+    "stem": "一般来说，使用浏览器可以直接访问FTP站点。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "现代浏览器支持ftp://URL，可匿名或登录下载。"
+  },
+  {
+    "id": "q143",
+    "type": "multi",
+    "stem": "Serv-U的特点有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "作为多协议文件服务器，支持5个行业标准的文件共享协议"
+      },
+      {
+        "key": "B",
+        "text": "具有适合企业的总体安全性，使用多种行业标准来确保数据安全"
+      },
+      {
+        "key": "C",
+        "text": "支持多种客户端"
+      },
+      {
+        "key": "D",
+        "text": "与IIS集成"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "Serv-U独立运行，非IIS插件，故D错。"
+  },
+  {
+    "id": "q144",
+    "type": "boolean",
+    "stem": "Serv-U是轻量化的FTP服务器，只能进行单站点的FTP服务管理。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Serv-U支持多域、多站点集中管理，功能丰富。"
+  },
+  {
+    "id": "q145",
+    "type": "multi",
+    "stem": "Serv-U用户按照登录范围分，可以有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "本地用户"
+      },
+      {
+        "key": "B",
+        "text": "域用户"
+      },
+      {
+        "key": "C",
+        "text": "工作组用户"
+      },
+      {
+        "key": "D",
+        "text": "全局用户"
+      }
+    ],
+    "answer": "BD",
+    "explain": "Serv-U分本地域与系统域（AD/LDAP），即域用户、全局用户。"
+  },
+  {
+    "id": "q146",
+    "type": "multi",
+    "stem": "Serv-U用户按照来源分类可以有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Serv-U用户"
+      },
+      {
+        "key": "B",
+        "text": "工作组用户"
+      },
+      {
+        "key": "C",
+        "text": "数据库用户"
+      },
+      {
+        "key": "D",
+        "text": "Windows用户"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "支持本地、AD/LDAP、ODBC数据库三种来源，不含工作组。"
+  },
+  {
+    "id": "q147",
+    "type": "boolean",
+    "stem": "Serv-U是小型FTP服务器，其访问需要使用专用的FTP客户端软件。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "浏览器或任何FTP客户端均可访问，无需专用软件。"
+  },
+  {
+    "id": "q148",
+    "type": "single",
+    "stem": "DHCP是指？",
+    "options": [
+      {
+        "key": "A",
+        "text": "直接主机配置协议"
+      },
+      {
+        "key": "B",
+        "text": "直接主机控制协议"
+      },
+      {
+        "key": "C",
+        "text": "动态主机配置协议"
+      },
+      {
+        "key": "D",
+        "text": "动态主机控制协议"
+      }
+    ],
+    "answer": "C",
+    "explain": "Dynamic Host Configuration Protocol，动态分配IP等参数。"
+  },
+  {
+    "id": "q149",
+    "type": "multi",
+    "stem": "以下哪些是DHCP服务能够完成的工作？",
+    "options": [
+      {
+        "key": "A",
+        "text": "分配IP地址"
+      },
+      {
+        "key": "B",
+        "text": "分配端口"
+      },
+      {
+        "key": "C",
+        "text": "设置DNS服务器"
+      },
+      {
+        "key": "D",
+        "text": "设置网关"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "DHCP只负责网络层参数，端口由运输层动态分配，不在其列。"
+  },
+  {
+    "id": "q150",
+    "type": "boolean",
+    "stem": "在DHCP服务机制中，可分为服务器和客户端两个部分。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "DHCP采用经典C/S模型，服务器监听67，客户端使用68。"
+  },
+  {
+    "id": "q151",
+    "type": "boolean",
+    "stem": "DHCP的服务器本身也是一台计算机，也可以使用动态分配的IP地址。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "服务器需固定IP，否则客户端无法定位并获取租约。"
+  },
+  {
+    "id": "q152",
+    "type": "boolean",
+    "stem": "为了防止DHCP冲突，同一子网通常只能包含一台DHCP服务器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "可通过作用域划分、中继代理或故障转移群集部署多台，避免冲突即可。"
+  },
+  {
+    "id": "q153",
+    "type": "boolean",
+    "stem": "DHCP服务器可以使用MAC地址作为判断依据，固定给某计算机网卡设置相同的IP地址。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "通过“保留”或“固定租约”绑定MAC与IP，实现地址固定。"
+  },
+  {
+    "id": "q154",
+    "type": "single",
+    "stem": "在CentOS 6系统中如果需要安装DHCP可以使用命令？",
+    "options": [
+      {
+        "key": "A",
+        "text": "yum install dhcp"
+      },
+      {
+        "key": "B",
+        "text": "apt-get install dhcp"
+      },
+      {
+        "key": "C",
+        "text": "yum installdhcpd"
+      },
+      {
+        "key": "D",
+        "text": "apt-get install dhcpd"
+      }
+    ],
+    "answer": "A",
+    "explain": "CentOS使用yum，包名dhcp，非dhcpd。"
+  },
+  {
+    "id": "q155",
+    "type": "single",
+    "stem": "在CentOS 6系统中，eth0网卡默认的配置文件是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/network-scripts/ifcfg-eth0"
+      },
+      {
+        "key": "B",
+        "text": "/etc/network/ifcfg-eth0"
+      },
+      {
+        "key": "C",
+        "text": "/etc/sysconfig/network/ifcfg-eth0"
+      },
+      {
+        "key": "D",
+        "text": "/etc/sysconfig/network-scripts/ifcfg-eth0"
+      }
+    ],
+    "answer": "D",
+    "explain": "CentOS 6网卡配置文件统一位于/etc/sysconfig/network-scripts/。"
+  },
+  {
+    "id": "q156",
+    "type": "single",
+    "stem": "在CentOS 6系统中，DHCP的主配置文件一般是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/dhcp/dhcpd.conf"
+      },
+      {
+        "key": "B",
+        "text": "/etc/dhcp/dhcp.conf"
+      },
+      {
+        "key": "C",
+        "text": "/etc/dhcpd.conf"
+      },
+      {
+        "key": "D",
+        "text": "/etc/dhcp.conf"
+      }
+    ],
+    "answer": "A",
+    "explain": "dhcp软件包将主配置置于/etc/dhcp/dhcpd.conf。"
+  },
+  {
+    "id": "q157",
+    "type": "single",
+    "stem": "在CentOS 6系统的DHCP配置中，MAC地址的表示为？",
+    "options": [
+      {
+        "key": "A",
+        "text": "hardware address"
+      },
+      {
+        "key": "B",
+        "text": "MAC address"
+      },
+      {
+        "key": "C",
+        "text": "hardware MAC"
+      },
+      {
+        "key": "D",
+        "text": "hardware ethernet"
+      }
+    ],
+    "answer": "D",
+    "explain": "dhcpd.conf使用hardware ethernet后跟MAC地址。"
+  },
+  {
+    "id": "q158",
+    "type": "single",
+    "stem": "在CentOS 6系统的DHCP配置中，设置IP地址范围的正确示例是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "range 192.168.1.100 192.168.1.200"
+      },
+      {
+        "key": "B",
+        "text": "range 192.168.1.100 192.168.1.200;"
+      },
+      {
+        "key": "C",
+        "text": "option range 192.168.1.100 192.168.1.200"
+      },
+      {
+        "key": "D",
+        "text": "option range 192.168.1.100 192.168.1.200;"
+      }
+    ],
+    "answer": "B",
+    "explain": "range指令后空格分隔起止IP，行尾需分号。"
+  },
+  {
+    "id": "q159",
+    "type": "single",
+    "stem": "在CentOS 6系统的DHCP配置中，设置网关地址正确的示例是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "option routers 192.168.1.1;"
+      },
+      {
+        "key": "B",
+        "text": "option gateway 192.168.1.1;"
+      },
+      {
+        "key": "C",
+        "text": "default routers 192.168.1.1;"
+      },
+      {
+        "key": "D",
+        "text": "default gateway 192.168.1.1;"
+      }
+    ],
+    "answer": "A",
+    "explain": "option routers后跟网关IP，行尾分号结束。"
+  },
+  {
+    "id": "q160",
+    "type": "boolean",
+    "stem": "Web服务也就是我们说的World Wide Web服务，这是互联网上现在应用最多的服务之一。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "HTTP/HTTPS承载网页、API，是当前最普及的互联网应用。"
+  },
+  {
+    "id": "q161",
+    "type": "boolean",
+    "stem": "Apache是世界使用排名第一的Web服务器软件，只能在类Linux系统下使用。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Apache有Windows版，可在多平台运行。"
+  },
+  {
+    "id": "q162",
+    "type": "boolean",
+    "stem": "URL地址就是网络地址。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "URL含协议、主机、路径等；网络地址通常指IP或域名。"
+  },
+  {
+    "id": "q163",
+    "type": "boolean",
+    "stem": "Web服务器只能使用的服务端口80。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "可监听任意端口，如8080、443等；80仅为HTTP默认。"
+  },
+  {
+    "id": "q164",
+    "type": "boolean",
+    "stem": "在输入URL地址的时候其端口可以省略。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "仅当使用默认端口（HTTP 80/HTTPS 443）时可省略，否则必须指定。"
+  },
+  {
+    "id": "q165",
+    "type": "single",
+    "stem": "Apache服务器的主配置文件是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/httpd/conf/httpd.conf"
+      },
+      {
+        "key": "B",
+        "text": "/etc/httpd/conf/http.conf"
+      },
+      {
+        "key": "C",
+        "text": "/etc/web/conf/httpd.conf"
+      },
+      {
+        "key": "D",
+        "text": "/etc/web/conf/http.conf"
+      }
+    ],
+    "answer": "A",
+    "explain": "RHEL/CentOS系列Apache主配置路径：/etc/httpd/conf/httpd.conf。"
+  },
+  {
+    "id": "q166",
+    "type": "multi",
+    "stem": "Apache实现虚拟主机的方式有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "基于IP地址"
+      },
+      {
+        "key": "B",
+        "text": "基于端口号"
+      },
+      {
+        "key": "C",
+        "text": "基于MAC地址"
+      },
+      {
+        "key": "D",
+        "text": "基于主机名"
+      }
+    ],
+    "answer": "ABD",
+    "explain": "MAC地址与网络层无关，不能用于虚拟主机。"
+  },
+  {
+    "id": "q167",
+    "type": "single",
+    "stem": "Apache实现虚拟主机的方式中最常使用的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "基于IP地址"
+      },
+      {
+        "key": "B",
+        "text": "基于端口号"
+      },
+      {
+        "key": "C",
+        "text": "基于MAC地址"
+      },
+      {
+        "key": "D",
+        "text": "基于主机名"
+      }
+    ],
+    "answer": "D",
+    "explain": "基于主机名（Name-based）无需多IP，最节省资源，应用最广。"
+  },
+  {
+    "id": "q168",
+    "type": "multi",
+    "stem": "网络地址中的本地地址的特点有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "不需要向互联网管理机构申请"
+      },
+      {
+        "key": "B",
+        "text": "可以由本机构自行分配"
+      },
+      {
+        "key": "C",
+        "text": "仅在机构内部使用"
+      },
+      {
+        "key": "D",
+        "text": "是网络上的唯一地址"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "本地地址（私有地址）仅在内部有效，不具全球唯一性。"
+  },
+  {
+    "id": "q169",
+    "type": "boolean",
+    "stem": "所有的路由器，对目的地址是专用地址的数据报一律不进行转发。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "仅互联网骨干/边缘路由器会丢弃；内部路由器可正常转发私有地址。"
+  },
+  {
+    "id": "q170",
+    "type": "single",
+    "stem": "以下不属于专用IP地址的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "192.168.255.255"
+      },
+      {
+        "key": "B",
+        "text": "172.16.31.0.0"
+      },
+      {
+        "key": "C",
+        "text": "10.255.0.1"
+      },
+      {
+        "key": "D",
+        "text": "172.32.255.254"
+      }
+    ],
+    "answer": "D",
+    "explain": "172.16.0.0–172.31.255.255为私有，172.32起已属公网。"
+  },
+  {
+    "id": "q171",
+    "type": "boolean",
+    "stem": "利用公用的互联网作为本机构各专用网之间的通信载体，这样的专用网又称为虚拟专用网VPN。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "VPN通过加密隧道在公网构建私有逻辑网络，节省专线成本。"
+  },
+  {
+    "id": "q172",
+    "type": "single",
+    "stem": "在内部主机与外部主机通信时，哪种状态下NAT路由器上数据报的源地址被替换？",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据报离开专用网时"
+      },
+      {
+        "key": "B",
+        "text": "数据报离开主机时"
+      },
+      {
+        "key": "C",
+        "text": "数据报进入专用网时"
+      },
+      {
+        "key": "D",
+        "text": "数据报进入主机时"
+      }
+    ],
+    "answer": "A",
+    "explain": "出方向将私有源地址改为公网地址，入方向再逆向转换。"
+  },
+  {
+    "id": "q173",
+    "type": "multi",
+    "stem": "网络防火墙通常可以分为以下几类？",
+    "options": [
+      {
+        "key": "A",
+        "text": "规则过滤"
+      },
+      {
+        "key": "B",
+        "text": "包过滤"
+      },
+      {
+        "key": "C",
+        "text": "应用代理"
+      },
+      {
+        "key": "D",
+        "text": "状态检测"
+      }
+    ],
+    "answer": "BCD",
+    "explain": "规则过滤是抽象概念，具体实现分包过滤、代理、状态检测。"
+  },
+  {
+    "id": "q174",
+    "type": "multi",
+    "stem": "包过滤防火墙可依据的基本信息有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "源地址"
+      },
+      {
+        "key": "B",
+        "text": "目标地址"
+      },
+      {
+        "key": "C",
+        "text": "端口号"
+      },
+      {
+        "key": "D",
+        "text": "协议"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "五元组（源/目IP、源/目端口、协议）是包过滤核心匹配项。"
+  },
+  {
+    "id": "q175",
+    "type": "boolean",
+    "stem": "Netfilter是Linux核心中的一个通用架构，它提供了一系列的“表”，每个表中有一条或数条“规则”组成。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Netfilter提供“表”→“链”→“规则”三级结构，非仅表与规则。"
+  },
+  {
+    "id": "q176",
+    "type": "single",
+    "stem": "目前Linux系统中普遍使用Netfilter/iptables IP数据包过滤系统，以下选项中不属于“链”的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "INPUT"
+      },
+      {
+        "key": "B",
+        "text": "FORWARD"
+      },
+      {
+        "key": "C",
+        "text": "PREROUTING"
+      },
+      {
+        "key": "D",
+        "text": "PORT"
+      }
+    ],
+    "answer": "D",
+    "explain": "PORT并非链名；前三者为内置链。"
+  },
+  {
+    "id": "q177",
+    "type": "single",
+    "stem": "Netfilter/iptables IP数据包过滤系统中，Netfilter里面没有以下哪个表？",
+    "options": [
+      {
+        "key": "A",
+        "text": "nat表"
+      },
+      {
+        "key": "B",
+        "text": "filter表"
+      },
+      {
+        "key": "C",
+        "text": "mangle表"
+      },
+      {
+        "key": "D",
+        "text": "rules表"
+      }
+    ],
+    "answer": "D",
+    "explain": "rules表不存在，标准表为filter、nat、mangle、raw、security。"
+  },
+  {
+    "id": "q178",
+    "type": "single",
+    "stem": "在DNS系统中，反向解析指的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "根据计算机的IP地址解析其DNS名称"
+      },
+      {
+        "key": "B",
+        "text": "根据计算机的DNS名称解析相应的IP地址"
+      },
+      {
+        "key": "C",
+        "text": "根据计算机的MAC地址解析相应的IP地址"
+      },
+      {
+        "key": "D",
+        "text": "根据计算机的IP地址解析相应的MAC地址"
+      }
+    ],
+    "answer": "A",
+    "explain": "反向解析通过in-addr.arpa域由IP查域名。"
+  },
+  {
+    "id": "q179",
+    "type": "boolean",
+    "stem": "HOSTS文件是比较老的域名查询文件，在现今的操作系统中一般都不再用它。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "HOSTS仍用于静态解析、测试与应急，系统优先读取。"
+  },
+  {
+    "id": "q180",
+    "type": "boolean",
+    "stem": "NetBIOS名称解析，广播方式只能解析本网段的NetBIOS名称。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "广播不跨路由，仅限同一广播域。"
+  },
+  {
+    "id": "q181",
+    "type": "multi",
+    "stem": "WINS组件一般包括有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "WINS服务器"
+      },
+      {
+        "key": "B",
+        "text": "WINS客户端"
+      },
+      {
+        "key": "C",
+        "text": "WINS代理"
+      },
+      {
+        "key": "D",
+        "text": "WINS数据库"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "四部分协同完成NetBIOS名称注册与解析。"
+  },
+  {
+    "id": "q182",
+    "type": "single",
+    "stem": "以下哪条命令可显示和查看客户端域名解析程序缓存？",
+    "options": [
+      {
+        "key": "A",
+        "text": "ipconfig"
+      },
+      {
+        "key": "B",
+        "text": "ipconfig /all"
+      },
+      {
+        "key": "C",
+        "text": "ipconfig /flushdns"
+      },
+      {
+        "key": "D",
+        "text": "ipconfig /displaydns"
+      }
+    ],
+    "answer": "D",
+    "explain": "/displaydns专门列出本地DNS缓存内容。"
+  },
+  {
+    "id": "q183",
+    "type": "boolean",
+    "stem": "对于仅有一个网段的独立局域网，没有必要部署WINS服务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "单网段可用广播或LMHOSTS完成NetBIOS解析，无需WINS。"
+  },
+  {
+    "id": "q184",
+    "type": "multi",
+    "stem": "与关系型数据库相比，目录数据库特点如下？",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据读取和查询效率非常高，比关系型数据库能够快一个数量级"
+      },
+      {
+        "key": "B",
+        "text": "数据写入效率较低，适用于数据不需要经常改动，但需要频繁读出的情况"
+      },
+      {
+        "key": "C",
+        "text": "以树状的层次结构来描述数据信息"
+      },
+      {
+        "key": "D",
+        "text": "能够维持目录对象名称的唯一性"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "四点准确概括目录数据库读快写慢、树形组织、唯一命名等特性。"
+  },
+  {
+    "id": "q185",
+    "type": "single",
+    "stem": "Linux平台常用的目录服务软件是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "LDAPv3"
+      },
+      {
+        "key": "B",
+        "text": "LDAPv2"
+      },
+      {
+        "key": "C",
+        "text": "OpenLDAP"
+      },
+      {
+        "key": "D",
+        "text": "Active Directory"
+      }
+    ],
+    "answer": "C",
+    "explain": "OpenLDAP为开源LDAP服务器，广泛用于Linux。"
+  },
+  {
+    "id": "q186",
+    "type": "boolean",
+    "stem": "Active Directory建立在域的基础上，由域控制器对网络中的资源实行集中管理和控制。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "AD核心功能即通过域控制器集中认证与策略管理。"
+  },
+  {
+    "id": "q187",
+    "type": "single",
+    "stem": "Active Directory的功能不包括以下哪些选项？",
+    "options": [
+      {
+        "key": "A",
+        "text": "数据存储"
+      },
+      {
+        "key": "B",
+        "text": "查询和索引机制的建立"
+      },
+      {
+        "key": "C",
+        "text": "通过网络分发目录数据的复制服务"
+      },
+      {
+        "key": "D",
+        "text": "提供磁盘逻辑卷管理"
+      }
+    ],
+    "answer": "D",
+    "explain": "磁盘逻辑卷管理由LVM/RAID完成，非AD范畴。"
+  },
+  {
+    "id": "q188",
+    "type": "multi",
+    "stem": "Active Directory对象可分为几种类型？",
+    "options": [
+      {
+        "key": "A",
+        "text": "容器对象"
+      },
+      {
+        "key": "B",
+        "text": "非容器对象"
+      },
+      {
+        "key": "C",
+        "text": "上层对象"
+      },
+      {
+        "key": "D",
+        "text": "下层对象"
+      }
+    ],
+    "answer": "AB",
+    "explain": "容器可含子对象，非容器（叶对象）不能，为AD基本分类。"
+  },
+  {
+    "id": "q189",
+    "type": "single",
+    "stem": "Active Directory对象的主要类别不包括以下的哪一项？",
+    "options": [
+      {
+        "key": "A",
+        "text": "用户和组"
+      },
+      {
+        "key": "B",
+        "text": "联系人和组织单位"
+      },
+      {
+        "key": "C",
+        "text": "用户名和密码"
+      },
+      {
+        "key": "D",
+        "text": "计算机和打印机"
+      }
+    ],
+    "answer": "C",
+    "explain": "密码是属性而非对象类别。"
+  },
+  {
+    "id": "q190",
+    "type": "multi",
+    "stem": "域中包括以下几类的计算机？",
+    "options": [
+      {
+        "key": "A",
+        "text": "域控制器"
+      },
+      {
+        "key": "B",
+        "text": "成员服务器"
+      },
+      {
+        "key": "C",
+        "text": "工作站"
+      },
+      {
+        "key": "D",
+        "text": "笔记本"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "笔记本属于工作站范畴，不再单列。"
+  },
+  {
+    "id": "q191",
+    "type": "multi",
+    "stem": "规划Windows网络结构时，通常有哪几种工作方式？",
+    "options": [
+      {
+        "key": "A",
+        "text": "工作组"
+      },
+      {
+        "key": "B",
+        "text": "域"
+      },
+      {
+        "key": "C",
+        "text": "对等网"
+      },
+      {
+        "key": "D",
+        "text": "家庭网"
+      }
+    ],
+    "answer": "AB",
+    "explain": "Windows网络核心模型即工作组与域。"
+  },
+  {
+    "id": "q192",
+    "type": "boolean",
+    "stem": "域控制器作为域中最重要的服务器，不允许它降级为成员服务器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "运行dcpromo可降级为普通成员服务器，过程可逆。"
+  },
+  {
+    "id": "q193",
+    "type": "single",
+    "stem": "本课程中LDAP是指？",
+    "options": [
+      {
+        "key": "A",
+        "text": "轻量级目录访问协议"
+      },
+      {
+        "key": "B",
+        "text": "远程数据地址协议"
+      },
+      {
+        "key": "C",
+        "text": "轻量数据交换协议"
+      },
+      {
+        "key": "D",
+        "text": "长数据访问热点"
+      }
+    ],
+    "answer": "A",
+    "explain": "LDAP即Lightweight Directory Access Protocol。"
+  },
+  {
+    "id": "q194",
+    "type": "multi",
+    "stem": "文件服务器的部署主要考虑的因素有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "存取速度"
+      },
+      {
+        "key": "B",
+        "text": "存储容量"
+      },
+      {
+        "key": "C",
+        "text": "存储位置"
+      },
+      {
+        "key": "D",
+        "text": "安全措施"
+      }
+    ],
+    "answer": "ABD",
+    "explain": "位置非核心考量，速度、容量、安全更关键。"
+  },
+  {
+    "id": "q195",
+    "type": "boolean",
+    "stem": "使用PC机就能非常快速地建立文件服务器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "普通PC安装Linux/Windows Server即可搭建文件服务，门槛低。"
+  },
+  {
+    "id": "q196",
+    "type": "boolean",
+    "stem": "硬件打印服务器有别于软件打印服务器，可以不用网络地址实现多用户打印。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "硬件打印服务器仍需IP地址接入网络，才能为多用户服务。"
+  },
+  {
+    "id": "q197",
+    "type": "boolean",
+    "stem": "Windows计算机将所连接的打印机共享出来，就可成为软件打印服务器。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "共享后网内其他机可通过\\\\computer\\printer方式提交打印任务。"
+  },
+  {
+    "id": "q198",
+    "type": "single",
+    "stem": "Windows操作系统通常默认使用哪个协议来实现文件和打印共享？",
+    "options": [
+      {
+        "key": "A",
+        "text": "FTP"
+      },
+      {
+        "key": "B",
+        "text": "TELNET"
+      },
+      {
+        "key": "C",
+        "text": "Samba"
+      },
+      {
+        "key": "D",
+        "text": "SMB/CIFS"
+      }
+    ],
+    "answer": "D",
+    "explain": "SMB/CIFS为Windows原生文件与打印共享协议。"
+  },
+  {
+    "id": "q199",
+    "type": "boolean",
+    "stem": "文件服务器的核心功能是文件共享，在Windows系统中是通过共享文件夹实现的。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "共享文件夹是Windows文件服务基本单元，通过UNC访问。"
+  },
+  {
+    "id": "q200",
+    "type": "multi",
+    "stem": "文件服务器的配置管理工作包括有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "查看、创建和配置共享文件夹"
+      },
+      {
+        "key": "B",
+        "text": "创建、查看和设置共享资源权限"
+      },
+      {
+        "key": "C",
+        "text": "查看和管理通过网络连接到计算机的用户和打开的文件"
+      },
+      {
+        "key": "D",
+        "text": "查看、创建和配置磁盘分区"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "磁盘分区属存储初始化，非日常文件服务管理范畴。"
+  },
+  {
+    "id": "q201",
+    "type": "multi",
+    "stem": "一般情况下，哪些组成员能够配置管理共享文件夹？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Guest"
+      },
+      {
+        "key": "B",
+        "text": "Users"
+      },
+      {
+        "key": "C",
+        "text": "Administrators"
+      },
+      {
+        "key": "D",
+        "text": "Server Operators"
+      }
+    ],
+    "answer": "CD",
+    "explain": "Administrators与Server Operators拥有共享管理权限。"
+  },
+  {
+    "id": "q202",
+    "type": "multi",
+    "stem": "以下共享名属于特殊共享资源的有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "ADMINS"
+      },
+      {
+        "key": "B",
+        "text": "DESKTOP"
+      },
+      {
+        "key": "C",
+        "text": "SYSVOL"
+      },
+      {
+        "key": "D",
+        "text": "PRINTS"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "ADMINS（远程管理）、SYSVOL（域共享）、PRINTS（打印驱动）为系统特殊共享。"
+  },
+  {
+    "id": "q203",
+    "type": "boolean",
+    "stem": "使用共享文件夹时，该文件夹如果位于NTFS分区，其安全性较FAT分区更高。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NTFS支持精细ACL、加密、审计，FAT仅简单权限。"
+  },
+  {
+    "id": "q204",
+    "type": "boolean",
+    "stem": "共享文件夹时，权限“允许”的优先级高于权限“拒绝”。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Windows坚持“拒绝优先”，任何拒绝均覆盖允许。"
+  },
+  {
+    "id": "q205",
+    "type": "boolean",
+    "stem": "共享文件夹时，权限具有累加性，当用户隶属多个组时，其权限是所有组权限的总和。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "同一资源多个组权限相加，再与拒绝比较。"
+  },
+  {
+    "id": "q206",
+    "type": "single",
+    "stem": "在Windows系统中，UNC表示通用命名约定，一般常用的格式为？",
+    "options": [
+      {
+        "key": "A",
+        "text": "\\\\服务器名\\共享名"
+      },
+      {
+        "key": "B",
+        "text": "//服务器名/共享名"
+      },
+      {
+        "key": "C",
+        "text": "\\\\服务器名\\用户名\\共享名"
+      },
+      {
+        "key": "D",
+        "text": "//服务器名/用户名/共享名"
+      }
+    ],
+    "answer": "A",
+    "explain": "UNC标准格式：\\\\host\\share，反斜杠开头。"
+  },
+  {
+    "id": "q207",
+    "type": "multi",
+    "stem": "UNC一般可以直接在哪些地方输入进行访问？",
+    "options": [
+      {
+        "key": "A",
+        "text": "文本文件中"
+      },
+      {
+        "key": "B",
+        "text": "浏览器地址栏"
+      },
+      {
+        "key": "C",
+        "text": "Windows的“开始”→“运行”中"
+      },
+      {
+        "key": "D",
+        "text": "Windows资源管理器地址栏"
+      }
+    ],
+    "answer": "BCD",
+    "explain": "文本文件仅记录，不能直接访问；其余均可解析UNC。"
+  },
+  {
+    "id": "q208",
+    "type": "single",
+    "stem": "Samba服务通常应用于哪些操作系统之间？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Windows系统之间"
+      },
+      {
+        "key": "B",
+        "text": "Windows系统和Linux系统"
+      },
+      {
+        "key": "C",
+        "text": "Linux系统之间"
+      },
+      {
+        "key": "D",
+        "text": "Windows XP和Windows Server系统之间"
+      }
+    ],
+    "answer": "B",
+    "explain": "Samba主要解决Linux与Windows互访，实现SMB/CIFS兼容。"
+  },
+  {
+    "id": "q209",
+    "type": "boolean",
+    "stem": "Samba是一种网络协议，是一套让UNIX类系统能够应用Microsoft网络通信协议的协议。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Samba是服务/软件，非协议；协议为SMB/CIFS。"
+  },
+  {
+    "id": "q210",
+    "type": "multi",
+    "stem": "Samba服务是由以下哪些进程组成？",
+    "options": [
+      {
+        "key": "A",
+        "text": "smb"
+      },
+      {
+        "key": "B",
+        "text": "smbd"
+      },
+      {
+        "key": "C",
+        "text": "nmbd"
+      },
+      {
+        "key": "D",
+        "text": "samba"
+      }
+    ],
+    "answer": "BC",
+    "explain": "smbd处理文件/打印，nmbd负责NetBIOS名称服务。"
+  },
+  {
+    "id": "q211",
+    "type": "single",
+    "stem": "新版的Samba中，nmbd和smbd使用的端口是哪个？",
+    "options": [
+      {
+        "key": "A",
+        "text": "137"
+      },
+      {
+        "key": "B",
+        "text": "138"
+      },
+      {
+        "key": "C",
+        "text": "139"
+      },
+      {
+        "key": "D",
+        "text": "445"
+      }
+    ],
+    "answer": "D",
+    "explain": "新版统一走TCP 445，旧版137-139用于NetBIOS。"
+  },
+  {
+    "id": "q212",
+    "type": "multi",
+    "stem": "Samba服务的工作过程可以分为以下几个步骤？",
+    "options": [
+      {
+        "key": "A",
+        "text": "协议协商"
+      },
+      {
+        "key": "B",
+        "text": "建立连接"
+      },
+      {
+        "key": "C",
+        "text": "访问共享资源"
+      },
+      {
+        "key": "D",
+        "text": "断开连接"
+      }
+    ],
+    "answer": "ABCD",
+    "explain": "四步完整描述SMB会话生命周期。"
+  },
+  {
+    "id": "q213",
+    "type": "single",
+    "stem": "Samba的配置文件一般放在哪个目录中？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/samba"
+      },
+      {
+        "key": "B",
+        "text": "/etc/smb"
+      },
+      {
+        "key": "C",
+        "text": "/etc/samba/smb"
+      },
+      {
+        "key": "D",
+        "text": "/etc"
+      }
+    ],
+    "answer": "A",
+    "explain": "默认配置目录：/etc/samba/，主配置文件smb.conf位于其下。"
+  },
+  {
+    "id": "q214",
+    "type": "single",
+    "stem": "Samba的主配置文件名为？",
+    "options": [
+      {
+        "key": "A",
+        "text": "samba.conf"
+      },
+      {
+        "key": "B",
+        "text": "sam.conf"
+      },
+      {
+        "key": "C",
+        "text": "samb.conf"
+      },
+      {
+        "key": "D",
+        "text": "smb.conf"
+      }
+    ],
+    "answer": "D",
+    "explain": "主配置文件固定为smb.conf。"
+  },
+  {
+    "id": "q215",
+    "type": "single",
+    "stem": "通常Samba服务的日志文件保存位置在？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/log/samba"
+      },
+      {
+        "key": "B",
+        "text": "/var/log/samba"
+      },
+      {
+        "key": "C",
+        "text": "/usr/log/samba"
+      },
+      {
+        "key": "D",
+        "text": "/boot/log/samba"
+      }
+    ],
+    "answer": "B",
+    "explain": "日志统一放/var/log/samba/，符合Linux日志规范。"
+  },
+  {
+    "id": "q216",
+    "type": "boolean",
+    "stem": "在本课程中NFS指的是New File System，即新型文件系统。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "NFS即Network File System，网络文件系统，非New。"
+  },
+  {
+    "id": "q217",
+    "type": "multi",
+    "stem": "NFS网络文件系统的特点有？",
+    "options": [
+      {
+        "key": "A",
+        "text": "需要共享的数据可以存放在NFS服务器，其他主机上的用户可以通过NFS服务访问NFS服务器上的共享资源，节省客户端本地硬盘空间，便于集中管理"
+      },
+      {
+        "key": "B",
+        "text": "远程主机上的文件的物理位置发生变化，将会使客户访问方式发生变化"
+      },
+      {
+        "key": "C",
+        "text": "客户访问远程主机上的文件和访问本地主机上的资源一样，是透明的"
+      },
+      {
+        "key": "D",
+        "text": "可以为不同客户设置不同的访问权限"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "物理位置变化对客户透明，访问方式不变，故B错。"
+  },
+  {
+    "id": "q218",
+    "type": "boolean",
+    "stem": "NFS服务是基于C/S模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NFS经典客户端/服务器架构，服务器导出，客户端挂载。"
+  },
+  {
+    "id": "q219",
+    "type": "boolean",
+    "stem": "NFS服务器是访问输出文件的计算机。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "NFS服务器是“提供”共享文件的计算机，客户端才“访问”。"
+  },
+  {
+    "id": "q220",
+    "type": "boolean",
+    "stem": "NFS客户端是提供输出文件（共享目录文件）的计算机。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "客户端消费共享，服务器提供输出，角色颠倒。"
+  },
+  {
+    "id": "q221",
+    "type": "boolean",
+    "stem": "NFS客户端和NFS服务器通过远程过程调用协议实现数据传输。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "NFS基于RPC，端口映射与数据操作均通过RPC完成。"
+  },
+  {
+    "id": "q222",
+    "type": "boolean",
+    "stem": "NFS服务器开启服务之后会一直主动查找需要连接自己的客户端主机。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "NFS为被动服务，等待客户端挂载请求，不主动发现。"
+  },
+  {
+    "id": "q223",
+    "type": "multi",
+    "stem": "Linux下NFS服务所必需的几个进程是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "rpc.locked"
+      },
+      {
+        "key": "B",
+        "text": "rpcbind"
+      },
+      {
+        "key": "C",
+        "text": "rpc.mountd"
+      },
+      {
+        "key": "D",
+        "text": "rpc.nfsd"
+      }
+    ],
+    "answer": "BCD",
+    "explain": "rpcbind（端口映射）、rpc.mountd（挂载权检）、rpc.nfsd（文件服务）为必需。"
+  },
+  {
+    "id": "q224",
+    "type": "single",
+    "stem": "rpc.nfsd守护进程的主要作用是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "提供了NFS和配额管理程序之间的接口"
+      },
+      {
+        "key": "B",
+        "text": "判断、检查客户端是否具备登录主机的权限，负责处理NFS请求"
+      },
+      {
+        "key": "C",
+        "text": "管理NFS的文件系统"
+      },
+      {
+        "key": "D",
+        "text": "进行端口映射工作"
+      }
+    ],
+    "answer": "B",
+    "explain": "rpc.nfsd核心职责是处理客户端文件操作RPC请求。"
+  },
+  {
+    "id": "q225",
+    "type": "single",
+    "stem": "rpcbind的主要功能是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "进行端口映射"
+      },
+      {
+        "key": "B",
+        "text": "判断、检查客户端是否具备登录主机的权限，负责处理NFS请求"
+      },
+      {
+        "key": "C",
+        "text": "管理NFS的文件系统"
+      },
+      {
+        "key": "D",
+        "text": "处理客户端与服务器之间的文件锁定问题，确定文件的一致性"
+      }
+    ],
+    "answer": "A",
+    "explain": "rpcbind（旧称portmap）提供RPC程序号与端口映射。"
+  },
+  {
+    "id": "q226",
+    "type": "boolean",
+    "stem": "Linux系统下的NFS服务，用来处理崩溃系统的锁定恢复的进程是可选进程。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "rpc.lockd（文件锁）与rpc.statd（状态恢复）为可选，非必需。"
+  },
+  {
+    "id": "q227",
+    "type": "single",
+    "stem": "通常Linux系统的NFS服务配置文件是（包括目录）？",
+    "options": [
+      {
+        "key": "A",
+        "text": "/etc/exports"
+      },
+      {
+        "key": "B",
+        "text": "/etc/config"
+      },
+      {
+        "key": "C",
+        "text": "/etc/nfs/exports"
+      },
+      {
+        "key": "D",
+        "text": "/etc/nfs/config"
+      }
+    ],
+    "answer": "A",
+    "explain": "/etc/exports控制哪些目录以何权限导出，是NFS核心配置。"
+  },
+  {
+    "id": "q228",
+    "type": "single",
+    "stem": "Linux系统的NFS服务，以下哪个对应于“数据会先暂存于内存当中，而非直接写入硬盘”的权限？",
+    "options": [
+      {
+        "key": "A",
+        "text": "rw"
+      },
+      {
+        "key": "B",
+        "text": "ro"
+      },
+      {
+        "key": "C",
+        "text": "sync"
+      },
+      {
+        "key": "D",
+        "text": "async"
+      }
+    ],
+    "answer": "D",
+    "explain": "async先写内存后刷盘，提高速度，但可能丢数据。"
+  },
+  {
+    "id": "q229",
+    "type": "single",
+    "stem": "Linux系统的NFS服务，权限ro代表的是？",
+    "options": [
+      {
+        "key": "A",
+        "text": "可读写权限"
+      },
+      {
+        "key": "B",
+        "text": "只读权限"
+      },
+      {
+        "key": "C",
+        "text": "数据同步写入到内存与硬盘当中"
+      },
+      {
+        "key": "D",
+        "text": "数据会先暂存于内存当中，而非直接写入硬盘"
+      }
+    ],
+    "answer": "B",
+    "explain": "ro即read-only，客户端只能读取，不能写入。"
+  },
+  {
+    "id": "q230",
+    "type": "single",
+    "stem": "Linux系统中，NFS服务的“root_squash”权限是指？",
+    "options": [
+      {
+        "key": "A",
+        "text": "在登录NFS主机使用共享目录的用户如果是root，那么这个用户的权限将被压缩成匿名用户，通常它的UID与GID都会变成nobody"
+      },
+      {
+        "key": "B",
+        "text": "登录NFS主机使用共享目录的用户，如果是root，那么对于共享目录具有root权限"
+      },
+      {
+        "key": "C",
+        "text": "数据同步写入到内存与硬盘当中"
+      },
+      {
+        "key": "D",
+        "text": "数据会先暂存于内存当中，而非直接写入硬盘"
+      }
+    ],
+    "answer": "A",
+    "explain": "root_squash防止客户端root获得服务端root权限，映射为nobody。"
+  },
+  {
+    "id": "q231",
+    "type": "boolean",
+    "stem": "在本课程中FTP是指的优先文件传输协议。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "FTP即File Transfer Protocol，文件传输协议，非“优先”。"
+  },
+  {
+    "id": "q232",
+    "type": "boolean",
+    "stem": "FTP大大简化了文件传输的复杂性，但是需要注意不同的操作系统之间不能直接进行文件传输。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "FTP基于标准协议，跨操作系统传输正是其设计目标。"
+  },
+  {
+    "id": "q233",
+    "type": "boolean",
+    "stem": "FTP协议工作的时候，服务端和客户端使用了4个端口，分别是21、20、1031、1032端口。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "标准命令21，数据20；被动模式服务器端口随机，非固定1031/1032。"
+  },
+  {
+    "id": "q234",
+    "type": "multi",
+    "stem": "FTP服务有以下几种工作模式？",
+    "options": [
+      {
+        "key": "A",
+        "text": "服务器模式"
+      },
+      {
+        "key": "B",
+        "text": "客户端模式"
+      },
+      {
+        "key": "C",
+        "text": "主动传输模式"
+      },
+      {
+        "key": "D",
+        "text": "被动传输模式"
+      }
+    ],
+    "answer": "CD",
+    "explain": "FTP分主动（PORT）与被动（PASV）两种数据传输模式。"
+  },
+  {
+    "id": "q235",
+    "type": "boolean",
+    "stem": "如果需要跨网段使用FTP服务器，FTP服务器必须工作在被动模式。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "被动模式由服务器决定数据端口，客户端主动连，适合防火墙/NAT环境。"
+  },
+  {
+    "id": "q236",
+    "type": "boolean",
+    "stem": "IIS组件中包括有FTP服务。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "IIS自带FTP Server角色，安装即可启用。"
+  },
+  {
+    "id": "q237",
+    "type": "boolean",
+    "stem": "一般来说，使用浏览器可以直接访问FTP站点。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "A",
+    "explain": "现代浏览器支持ftp://URL，可匿名或登录下载。"
+  },
+  {
+    "id": "q238",
+    "type": "multi",
+    "stem": "Serv-U的特点有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "作为多协议文件服务器，支持5个行业标准的文件共享协议"
+      },
+      {
+        "key": "B",
+        "text": "具有适合企业的总体安全性，使用多种行业标准来确保数据安全"
+      },
+      {
+        "key": "C",
+        "text": "支持多种客户端"
+      },
+      {
+        "key": "D",
+        "text": "与IIS集成"
+      }
+    ],
+    "answer": "ABC",
+    "explain": "Serv-U独立运行，非IIS插件，故D错。"
+  },
+  {
+    "id": "q239",
+    "type": "boolean",
+    "stem": "Serv-U是轻量化的FTP服务器，只能进行单站点的FTP服务管理。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "Serv-U支持多域、多站点集中管理，功能丰富。"
+  },
+  {
+    "id": "q240",
+    "type": "multi",
+    "stem": "Serv-U用户按照登录范围分，可以有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "本地用户"
+      },
+      {
+        "key": "B",
+        "text": "域用户"
+      },
+      {
+        "key": "C",
+        "text": "工作组用户"
+      },
+      {
+        "key": "D",
+        "text": "全局用户"
+      }
+    ],
+    "answer": "BD",
+    "explain": "Serv-U分本地域与系统域（AD/LDAP），即域用户、全局用户。"
+  },
+  {
+    "id": "q241",
+    "type": "multi",
+    "stem": "Serv-U用户按照来源分类可以有哪些？",
+    "options": [
+      {
+        "key": "A",
+        "text": "Serv-U用户"
+      },
+      {
+        "key": "B",
+        "text": "工作组用户"
+      },
+      {
+        "key": "C",
+        "text": "数据库用户"
+      },
+      {
+        "key": "D",
+        "text": "Windows用户"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "支持本地、AD/LDAP、ODBC数据库三种来源，不含工作组。"
+  },
+  {
+    "id": "q242",
+    "type": "boolean",
+    "stem": "Serv-U是小型FTP服务器，其访问需要使用专用的FTP客户端软件。",
+    "options": [
+      {
+        "key": "A",
+        "text": "正确"
+      },
+      {
+        "key": "B",
+        "text": "错误"
+      }
+    ],
+    "answer": "B",
+    "explain": "浏览器或任何FTP客户端均可访问，无需专用软件。"
+  },
+  {
+    "id": "q243",
+    "type": "single",
+    "stem": "DHCP是指？",
+    "options": [
+      {
+        "key": "A",
+        "text": "直接主机配置协议"
+      },
+      {
+        "key": "B",
+        "text": "直接主机控制协议"
+      },
+      {
+        "key": "C",
+        "text": "动态主机配置协议"
+      },
+      {
+        "key": "D",
+        "text": "动态主机控制协议"
+      }
+    ],
+    "answer": "C",
+    "explain": "Dynamic Host Configuration Protocol，动态分配IP等参数。"
+  },
+  {
+    "id": "q244",
+    "type": "multi",
+    "stem": "以下哪些是DHCP服务能够完成的工作？",
+    "options": [
+      {
+        "key": "A",
+        "text": "分配IP地址"
+      },
+      {
+        "key": "B",
+        "text": "分配端口"
+      },
+      {
+        "key": "C",
+        "text": "设置DNS服务器"
+      },
+      {
+        "key": "D",
+        "text": "设置网关"
+      }
+    ],
+    "answer": "ACD",
+    "explain": "DHCP只负责网络层参数，端口由运输层动态分配，不在其列。"
+  }
+]
